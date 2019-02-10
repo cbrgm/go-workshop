@@ -2,6 +2,12 @@
 
 This workshop covers the following:
 
+## How to execute Go code?
+
+* "I have Go installed on my computer" -> Awesome! I show you in a minute..
+* "I don't have Go on my computer" -> Try [Go Playground](https://play.golang.org/)
+* "I don't want to install Go on my computer" -> Try [Go Docker Image](https://hub.docker.com/_/golang)
+
 ## Session 01 - Basics Syntax (~45min)
 
 * constants and variables
