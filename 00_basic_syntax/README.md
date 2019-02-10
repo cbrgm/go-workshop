@@ -8,7 +8,70 @@ We will first have a look at the basic Go syntax. You will learn:
 * how to write your own functions.
 * how packages and import statements work.
 
-## Constants & Identifier
+## Introduction
+
+The Go programming language
+
+* Modern (2009)
+* Compact, general-purpose
+* Imperative, statically type-checked, dynamically type-safe
+* Garbage-collected
+* Compiles to native code, statically linked
+* Fast compilation, efficient execution
+
+Designed by programmers for programmers! 
+
+###  Safety first, a few examples!
+
+
+Example 1: Typed, and type safe
+
+```
+var i int = -1
+var u uint = 200
+i = u   // nope, incompatible types
+```
+
+Example 2: Array accesses are bounds checked
+
+```
+s := make([]string, 10)
+x := s[20] // will panic at runtime
+```
+
+Example 3: No implicit conversions; booleans and integers are not aliases
+
+```
+i := 2
+if i { ... }    // nope, no coercion to bool
+```
+
+### Awesome support for concurrency
+
+* Multicore CPUs are a reality.
+* Multiprocessing is not a solution.
+* Networking support baked into the standard library, integrated into the runtime.
+
+### Garbage collected
+
+Go is a garbage collected language.
+
+* Eliminates the bookkeeping errors related to ownership of shared values.
+* Eliminates an entire class of use after free and memory leak bugs.
+* Enables simpler, cleaner, APIs.
+
+The garbage collector handles heaps into the 100's of GB range!
+
+### Opinionated
+
+Go is an opinionated language.
+
+* Unused local variables are an error.
+* Unused imports are also an error.
+* The compiler does not issue warnings, only errors.
+* A single way to format code as defined by `go fmt`.
+
+## Let's get started: Constants & Identifier
 
 Here are some examples of constants:
 
