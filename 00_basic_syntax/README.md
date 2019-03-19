@@ -210,7 +210,7 @@ for i = 0; i < 10; i++ {
 * if is used to choose between two choices based on a condition:
 
 ```
-if v > 0 {M
+if v > 0 {
         println("v is greater than zero")
 } else {
         println("v is less than or equal to zero")
